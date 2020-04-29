@@ -63,7 +63,6 @@ def entry_window(rno,string):
         submit_button.grid(row=rno+2,column=3)
     
     if(string == 'move_file'):
-        print("Chal ja bhai")
         label = Label(window,text='Source Location')
         label.grid(row=rno+1,column=2)
         label.grid(row=3,column=2)
@@ -73,7 +72,6 @@ def entry_window(rno,string):
         label.grid(row=rno+3,column=2)
         dest = Entry(window)
         dest.grid(row=rno+4,column=2)
-        print("Hy Bro")
         submit_button = Button(window,text="Submit",command=move)
         submit_button.grid(row=rno+5,column=3)
 
